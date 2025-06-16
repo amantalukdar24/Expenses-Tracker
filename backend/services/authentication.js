@@ -1,5 +1,6 @@
+require('dotenv').config();
 const jwt=require('jsonwebtoken');
-const secret="Aman24"
+const secret=process.env.JWT_SECRET_KEY;
 function createTokenForUser(user){
     const payload={
         _id:user._id,
