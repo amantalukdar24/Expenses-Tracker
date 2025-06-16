@@ -9,7 +9,7 @@ function Settings() {
         setActivateWarning(!activateWarning);
     }
     const handleUserDelete=async ()=>{
-        const response=await fetch("http://localhost:3000/user/delete",{
+        const response=await fetch("https://expenses-tracker-backend-hvnc.onrender.com/user/delete",{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json",
@@ -29,7 +29,7 @@ function Settings() {
         }
     }
     const handleGenrateOtp=async ()=>{
-        const response=await fetch('http://localhost:3000/user/getOtp',{
+        const response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/getOtp',{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
