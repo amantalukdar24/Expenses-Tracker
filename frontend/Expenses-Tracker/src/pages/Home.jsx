@@ -26,7 +26,7 @@ function Home() {
  }
  const handleSubmit=async (e)=>{
   e.preventDefault();
-  const response=await fetch("http://localhost:3000/expense/addExpense",{
+  const response=await fetch("https://expenses-tracker-backend-hvnc.onrender.com/expense/addExpense",{
     method:"POST",
     headers:{
       'Content-Type': 'application/x-www-form-urlencoded',
@@ -52,7 +52,7 @@ function Home() {
     setIsActivate(true);
   }
   const getTotalvalues=useCallback(async ()=>{
-    const response=await fetch("http://localhost:3000/expense/totalOfTypes",{
+    const response=await fetch("https://expenses-tracker-backend-hvnc.onrender.com/expense/totalOfTypes",{
       method:"GET",
       headers:{
         "Content-Type":"application/json",
@@ -84,7 +84,7 @@ function Home() {
   },[]);
 
   const getAllExpenses=useCallback(async ()=>{
-    const response=await fetch("http://localhost:3000/expense/allExpenses",{
+    const response=await fetch("https://expenses-tracker-backend-hvnc.onrender.com/expense/allExpenses",{
       method:"GET",
       headers:{
         "Content-Type":"application/json",
@@ -101,7 +101,7 @@ function Home() {
   const deleteItem=async (e)=>{
     const itemId=e.target.closest('li').id;
 
-    const result=await fetch(`http://localhost:3000/expense/${itemId}`,{
+    const result=await fetch(`https://expenses-tracker-backend-hvnc.onrender.com/expense/${itemId}`,{
       method:"DELETE",
       headers:{
         "authorization":localStorage.getItem('token'),
