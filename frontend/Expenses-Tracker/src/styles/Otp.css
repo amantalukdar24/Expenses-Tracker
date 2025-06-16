@@ -1,0 +1,149 @@
+.Otp{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    border:2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 55vh;
+    gap:50px;
+    background-color: lightgoldenrodyellow;
+}
+
+.iconbar{
+    
+   padding: 2vh 1vw 0vw 1vw; 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+.infos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    color: rebeccapurple;
+}
+.infos>span{
+    
+    text-decoration: underline;
+    color:red;
+    cursor: pointer;
+}
+.submitOtp{
+    width: 15vw;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: skyblue;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.otpHeader{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: orangered;
+}
+.otpInputs{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.n-fields{
+    width: 6vw;
+    height: 8vh;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    
+}
+.n-fields:focus{
+    border: 3px solid black;
+    border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .Otp {
+    width: 70vw;
+    height: auto;
+    margin: 10% 0% 0% 0%;
+    padding: 1.5rem 1rem;
+    gap: 30px;
+  }
+
+  .iconbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .infos {
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .submitOtp {
+    width: 50vw;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .otpHeader {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .otpInputs {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .n-fields {
+    width: 15vw;
+    height: 6vh;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .n-fields {
+    width: 12vw;
+    height: 5.5vh;
+    font-size: 1.1rem;
+  }
+
+  .submitOtp {
+    width: 30vw;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  .infos {
+    font-size: 1rem;
+  }
+
+  .otpHeader {
+    font-size: 1rem;
+  }
+}
+@media (max-width:768px){
+  .Otp{
+    margin-left: 15%;
+  }
+  .otpHeader{
+    font-size: 1.3rem;
+  }
+  .infos{
+    font-size: 1.3rem;
+  }
+  .submitOtp{
+    font-size: 1.5rem;
+  }
+
+}

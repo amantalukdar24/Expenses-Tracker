@@ -1,0 +1,67 @@
+.passForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: lightgoldenrodyellow;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.passHeader{
+    align-self: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: royalblue
+    
+    
+}
+.PasswordSection{
+    display: flex;
+    flex-direction: column;
+
+}
+.resetPassword{
+    width: 25vw;
+    height: 6vh;
+    border-radius: 10px;
+    border-color: black;
+    font-size: 1.2rem;
+
+}   
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.submitPass{
+    width: 20vw;
+    height: 5vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightgreen;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    align-self: center;
+}
+@media (max-width:768px)
+{
+    .resetPassword{
+        width:60vw;
+    }
+    
+}
+@media (max-width:480px)
+{
+   .resetPassword{
+        width:80vw;
+    } 
+    .submitPass{
+        width: 30vw;
+    }
+    .passHeader{
+        font-size: 2.4rem;
+    }
+}

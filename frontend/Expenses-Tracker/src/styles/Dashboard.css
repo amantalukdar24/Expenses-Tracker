@@ -1,0 +1,59 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    height:80vh;
+    border:2px solid black;
+    border-radius: 10px;
+    margin-top: 5%;
+    gap:35px;
+    
+}
+
+.dashboard-header{
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:green;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.dashboard-menu{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+}
+.labels{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    color: slateblue;
+
+}
+.options{
+    width:15vw;
+    height: 5vh;
+    background-color: lightgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+.dashboard-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5%;
+    
+
+}
+@media (max-width:480px)
+{
+    .dashboard{
+        overflow: auto;
+    }
+ .options{
+      width: 30vw;
+    }
+}

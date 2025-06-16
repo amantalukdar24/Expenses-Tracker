@@ -1,0 +1,113 @@
+.Welcome{
+    
+   
+    width: 100vw;
+   
+}
+
+.welcomebody{
+   margin: 10% 0% 0% 15%;
+  
+    width:80vw ;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border:2px solid black;
+    
+
+}
+.bg-container{
+    border-right: 3px solid black ;
+    width:80%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: url("/Images/image.png");
+    background-size: cover;
+    background-size: no-repeat;
+    background-position: center;
+    
+
+}
+.WelcomeText{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-content: center;
+   font-family: "Manrope", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 800;
+   font-style: normal;
+  background-color: silver;
+  color:royalblue;
+  font-size: 1.4rem;
+   align-items: center;
+  border-radius: 10px;
+}
+.JoinBtn{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 50px;
+    background-color: lightgoldenrodyellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* For Tablets and Below */
+@media (max-width: 768px) {
+    .welcomebody {
+        flex-direction: column;
+        margin: 10% 0% 0% 15%;
+        width: 80vw;
+        height: auto;
+
+    }
+
+    .bg-container {
+        width: 100%;
+        height: 200px;
+        border-right: none;
+        border-bottom: 2px solid black;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .WelcomeText {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .JoinBtn {
+        width: 60%;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .welcomebody {
+    margin: 10% 0% 0% 10%;
+        width: 95vw;
+    }
+
+    .bg-container {
+        height: 150px;
+    }
+
+    .WelcomeText {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .JoinBtn {
+        width: 80%;
+        font-size: 0.9rem;
+        height: 36px;
+    }
+}

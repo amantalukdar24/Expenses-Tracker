@@ -1,0 +1,70 @@
+main{
+ display:flex;
+ flex-direction: row;
+  justify-content: center;
+
+ gap:100px;
+ align-content: center;
+}
+.Outlets{
+    width:70vw;
+    
+}
+.pieCharts{
+    display: flex;
+    flex-direction: row;
+}
+.subChart{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    align-items:center ;
+}
+.subChart>h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:tomato
+}
+.Loader{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:35vw;
+    margin-left: 18%;
+    height: 45vh;
+    
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+ 
+ z-index: 999;
+
+}
+
+@media (max-width:768px){
+    .Outlets{
+        width: 100vw;
+    }
+    .pieCharts{
+        flex-direction: column;
+    }
+     .Loader{
+        width: 70vw;
+        height: 30vh;
+        margin-left: 15%;
+    }
+}
+@media (max-width:480px)
+{
+    .subChart{
+        flex-direction: column;
+    }
+    .Loader{
+        width: 70vw;
+        height: 30vh;
+        margin-left: 15%;
+    }
+}
