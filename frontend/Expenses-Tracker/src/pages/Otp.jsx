@@ -45,7 +45,7 @@ function Otp({setOtpValidate,setStep,step,inputsEmail={}}) {
     
      e.preventDefault();
      if(isLoggedIn){
-     const response=await fetch('http://localhost:3000/user/verifyOtp',{
+     const response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/verifyOtp',{
         method:"POST",
         headers:{
             "Content-Type":"application/x-www-form-urlencoded",
@@ -70,7 +70,7 @@ function Otp({setOtpValidate,setStep,step,inputsEmail={}}) {
   
  
   
-   const response=await fetch('http://localhost:3000/user/verifyOtpForReset',{
+   const response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/verifyOtpForReset',{
       method:"POST",
       headers:{
           "Content-Type":"application/x-www-form-urlencoded",
@@ -98,7 +98,7 @@ function Otp({setOtpValidate,setStep,step,inputsEmail={}}) {
    let response;
    if(isLoggedIn){
       
-         response=await fetch('http://localhost:3000/user/getOtp',{
+         response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/getOtp',{
              method:"GET",
              headers:{
                  "Content-Type":"application/json",
@@ -107,7 +107,7 @@ function Otp({setOtpValidate,setStep,step,inputsEmail={}}) {
          });
       }
       else{
-          response=await fetch('http://localhost:3000/user/getOtpForReset',{
+          response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/getOtpForReset',{
             method:"POST",
             headers:{
             "Content-Type":"application/x-www-form-urlencoded"
