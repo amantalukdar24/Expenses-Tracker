@@ -20,7 +20,7 @@ useEffect(()=>{
         e.preventDefault();
         let response;
         if(isLoggedIn){
-         response=await fetch('http://localhost:3000/user/resetPassword',{
+         response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/resetPassword',{
             method:"POST",
             headers:{
                 "Content-Type":"application/x-www-form-urlencoded",
@@ -31,7 +31,7 @@ useEffect(()=>{
     }
     else{
         setInputs(()=>({...inputs,email:inputsEmail.email}))
-        response=await fetch('http://localhost:3000/user/resetPasswordForReset',{
+        response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/resetPasswordForReset',{
             method:"POST",
             headers:{
                 "Content-Type":"application/x-www-form-urlencoded",
