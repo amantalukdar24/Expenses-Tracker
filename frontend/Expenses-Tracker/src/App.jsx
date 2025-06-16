@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import "./App.css"
 import Navbar from './components/Navbar'
-import RefreshHandler from './refreshHandler'
+import RefreshHandler from './RefreshHandler.js'
 import { Outlet } from 'react-router-dom'
 import Sidebar from './pages/Sidebar'
 import Welcome from './pages/Welcome'
