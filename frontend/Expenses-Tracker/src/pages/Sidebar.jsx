@@ -9,7 +9,7 @@ function Sidebar() {
  const Location=useLocation();
 
     const userDetails=async (req,res)=>{
-      const response=await fetch('http://localhost:3000/user/info',{
+      const response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/info',{
         method:"GET",
         headers:{
           "Content-Type":"application/json",
