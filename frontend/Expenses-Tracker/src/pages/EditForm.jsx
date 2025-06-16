@@ -16,7 +16,7 @@ function EditForm({setEditFormActivated,itemId,editFormActivated}) {
         setInputs(()=>({...inputs,[e.target.name]:e.target.value}));
        }
     const existingData=async ()=>{
-        const response=await fetch(`http://localhost:3000/expense/${itemId}`,{
+        const response=await fetch(`https://expenses-tracker-backend-hvnc.onrender.com/expense/${itemId}`,{
             method:'GET',
             headers:{
                 "Content-Type":"application/json",
@@ -43,7 +43,7 @@ setInputs({description:data.description,amount:data.amount,type:data.type,date:f
 
 const handleSubmit=async (e)=>{
     e.preventDefault();
-    const response=await fetch(`http://localhost:3000/expense/${itemId}`,{
+    const response=await fetch(`https://expenses-tracker-backend-hvnc.onrender.com/expense/${itemId}`,{
         method:"PATCH",
         headers:{
             'Content-Type': 'application/x-www-form-urlencoded',
