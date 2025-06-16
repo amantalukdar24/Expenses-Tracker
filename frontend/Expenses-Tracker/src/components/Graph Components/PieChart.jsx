@@ -5,7 +5,7 @@ const monthName=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","No
 export default function BasicPie({filterDate,type,setFilterDate}) {
     const [finalData,setFinaldata]=useState([])
     const getData=useCallback(async (params)=>{
-      const response=await fetch(`http://localhost:3000/analytics/${params}`,{
+      const response=await fetch(`https://expenses-tracker-backend-hvnc.onrender.com/analytics/${params}`,{
         method:"GET",
         headers:{
           "Content-Type":"application/json",
