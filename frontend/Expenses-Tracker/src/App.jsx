@@ -5,7 +5,7 @@ import RefreshHandler from './RefreshHandler.js'
 import { Outlet } from 'react-router-dom'
 import Sidebar from './pages/Sidebar'
 import Welcome from './pages/Welcome'
-import Footer from './components/footer'
+import Footer from './components/Footer.jsx'
 import { Slide, ToastContainer } from 'react-toastify';
 function App() {
  
