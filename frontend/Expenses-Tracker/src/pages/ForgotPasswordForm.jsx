@@ -18,7 +18,7 @@ function ForgotPasswordForm() {
   const handleSubmit=async (e)=>{
     e.preventDefault();
     setActivateLoader(true)
-     const response=await fetch('http://localhost:3000/user/getOtpForReset',{
+     const response=await fetch('https://expenses-tracker-backend-hvnc.onrender.com/user/getOtpForReset',{
       method:"POST",
       headers:{
       "Content-Type":"application/x-www-form-urlencoded"
