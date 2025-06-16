@@ -7,7 +7,7 @@ export default function SimpleBarChart({filterDate,setFilterDate}){
   const [incomeData,setIncomeData]=useState([]);
   const [xLabels,setXlabels]=useState([]);
   const getData=useCallback(async (params)=>{
-    const response=await fetch(`http://localhost:3000/analytics/${params}`,{
+    const response=await fetch(`https://expenses-tracker-backend-hvnc.onrender.com/analytics/${params}`,{
       method:"GET",
       headers:{
         "Content-Type":"application/json",
