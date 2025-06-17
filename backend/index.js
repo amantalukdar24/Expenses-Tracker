@@ -10,10 +10,7 @@ const analyticsRouter=require("./routes/analytics");
 const PORT=process.env.PORT || 3000;
 app.use(cors({origin:'*'}));
 app.use(express.urlencoded({extended:false}));
-mongoose.connect(process.env.MONGO_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect(process.env.MONGO_URL)
  .then(()=>console.log("Mongo Connected"))
  .catch((err)=>console.log(`Mongo error:${err}`));
 
