@@ -238,9 +238,7 @@ label{
     
 }
 
-@media screen {
-  
-}
+
 
 @media (max-width:768px){
   
@@ -313,4 +311,6 @@ label{
  .listDetails{
     font-size: 1.2rem;
  }
+    .addExpenseForm{
+        left:10%;
 }
