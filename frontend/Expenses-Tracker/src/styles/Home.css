@@ -311,7 +311,9 @@ label{
  .listDetails{
     font-size: 1.2rem;
  }
-   .addExpenseForm{
-        left:10%;
-      
+  .addExpenseForm{
+        width: 90vw;
+        height:60vh;
+       left: 5%;
+   }     
 }
