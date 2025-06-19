@@ -24,7 +24,7 @@ Track your expenses, savings, and manage your finances — all in one place. Bui
 **Frontend:**  
 - React.js  
 - Tailwind CSS  
-- Axios  
+- Material UI
 
 **Backend:**  
 - Node.js  
