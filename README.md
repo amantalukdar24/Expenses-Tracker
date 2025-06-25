@@ -23,7 +23,6 @@ Track your expenses, savings, and manage your finances — all in one place. Bui
 
 **Frontend:**  
 - React.js  
-- Tailwind CSS  
 - Material UI
 
 **Backend:**  
