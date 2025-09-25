@@ -24,7 +24,7 @@ async function serverRefresh(){
     if(data.success) console.log("Server Refresh");
 }
 setInterval(serverRefresh,30000);
-
+app.get("/",(req,res)=>{  return res.status(200).json({success:true});});
 app.use('/user',userRoute);
 app.use('/expense',expenseRoute);
 app.use('/analytics',analyticsRouter);
