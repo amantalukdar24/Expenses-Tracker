@@ -13,17 +13,7 @@ app.use(express.urlencoded({extended:false}));
 mongoose.connect(process.env.MONGO_URL)
  .then(()=>console.log("Mongo Connected"))
  .catch((err)=>console.log(`Mongo error:${err}`));
-async function serverRefresh(){
-    const refresh=await fetch(`https://expenses-tracker-backend-hvnc.onrender.com/`,{
-        method:"GET",
-        headers:{
-            "Content-Type":"application/json"
-        }
-    });
-    const data=await refresh.json();
-    if(data.success) console.log("Server Refresh");
-}
-setInterval(serverRefresh,30000);
+
 app.get("/",(req,res)=>{  return res.status(200).json({success:true});});
 app.use('/user',userRoute);
 app.use('/expense',expenseRoute);
